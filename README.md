@@ -2,8 +2,7 @@
 
 Projet 2 d'IA pour l'embarqué. Il consistait en l'enregistrement audio des mots rouges, vert, jaunes et noise. 
 Dans le tutoriel il était demandé de réaliser au moins 50 échantillons par son. Ici dans un soucis de temps seulement
-21 échantillons auront étés fait. Donc on aura un model moins performant que prévu. Il faudra jouer avec les paramètres
-sur l'entrainement pour renforcer notre model. 
+21 échantillons auront étés fait. 
 
 Résultat du MFCC qui consiste grâce à un :
 ![image](https://github.com/Cadedius/Projet_2/assets/62182073/91b6fa8e-780d-4537-be77-440f8e9f253d)
@@ -22,7 +21,5 @@ La matrice de confusion révèle des confusions fréquentes entre différentes c
 
 Les valeurs de F1 Score, qui mesurent l'équilibre entre précision et rappel, varient de 0,09 à 0,55 pour les différentes classes, ce qui indique un besoin d'amélioration globale.
 
-Pour améliorer les performances du modèle, on pourrait comme il était conseillé de faire au moins 50 échantillons. 
-
-Pour tester le model créer, il faut télercharger l'archive projet2, l'installer dans l'IDE d'Arduino et prendre l'exemple adéquate.
-
+Pour améliorer les performances du modèle, on pourrait comme il était conseillé de faire au moins 50 échantillons, ou jouer avec les paramètres d'entrainement du model. Par exemple on peut améliorer la représentation MFCC dans le modèle de reconnaissance audio, plusieurs paramètres clés peuvent être ajustés. On peut modifier le nombre de coefficients MFCC pour capturer des détails plus fins tout en surveillant la dimensionnalité, ajuster la longueur des trames et leur intervalle pour capturer des caractéristiques à différentes échelles, et jouer avec le nombre de filtres de la banque de filtres de Mel pour influencer la résolution fréquentielle.
+De plus, la longueur de la FFT peut être ajustée pour une meilleure résolution, le coefficient de préaccentuation peut être augmenté pour accentuer les hautes fréquences, et la fenêtre de normalisation peut être adaptée pour réduire le bruit. Enfin, l'augmentation de données peut aider à améliorer la généralisation du modèle en introduisant des variations artificielles dans les échantillons audio, et les limites de la plage de fréquence peuvent être ajustées en fonction du contexte audio. 
